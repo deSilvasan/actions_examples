@@ -2,7 +2,7 @@ import mysql.connector
 
 def get_mysql_version():
     conn = mysql.connector.connect(
-        host="db",
+        host="localhost",
         user="root",
         password="example",
         database="testdb"
