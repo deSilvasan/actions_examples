@@ -38,4 +38,5 @@ jobs:
         run: docker build -t myapp .
 
       - name: Run app in Docker (with DB)
-        run: docker run --network=host myapp
+        run: docker run --network=host myapp > out.log
+          cat output.log
