@@ -9,9 +9,11 @@ def get_mysql_version():
     )
     cursor = conn.cursor()
     cursor.execute("SELECT VERSION();")
-    print("MySQL version:", cursor.fetchone()[0])
+    version = cursor.fetchone()[0]
+    print("MySQL version:", version)
     cursor.close()
     conn.close()
+    return version
 
 if __name__ == "__main__":
     get_mysql_version()
