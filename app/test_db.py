@@ -1,4 +1,6 @@
 import unittest
+from db import get_mysql_version
+
 class TestMySQLVersion(unittest.TestCase):
 
     def test_get_mysql_version(self):
