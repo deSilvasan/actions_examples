@@ -1,3 +1,4 @@
+import unittest
 class TestMySQLVersion(unittest.TestCase):
 
     def test_get_mysql_version(self):
