@@ -5,5 +5,4 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app/ .
-
-CMD ["python", "db.py"]
+CMD ["python", "-m", "unittest", "test_db.py"]
